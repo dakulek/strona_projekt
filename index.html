@@ -1,0 +1,66 @@
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wszystko o Krowach</title>
+    <style>
+      
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #4b0082;
+        }
+
+        .content {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4b0082;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #6a0dad;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>Wszystko o Krowach</h1>
+        <p>Krowy to duże ssaki roślinożerne, które są jednym z najważniejszych zwierząt gospodarskich na świecie. Hodowane są głównie dla mleka, mięsa oraz skóry.</p>
+        <p>Krowy występują na całym świecie i odgrywają kluczową rolę w rolnictwie i gospodarce.</p>
+        <p>Przeciętna krowa waży około 600 kg i żyje średnio 20 lat.</p>
+        
+        <button class="button" onclick="changeBackgroundColor()">Zmień kolor tła</button>
+    </div>
+
+    <script>
+       
+        function changeBackgroundColor() {
+            const colors = ["#f0f8ff", "#ffe4e1", "#e6e6fa", "#f5f5dc"];
+            document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        }
+    </script>
+
+</body>
+</html>
